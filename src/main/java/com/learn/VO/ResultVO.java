@@ -1,5 +1,7 @@
 package com.learn.VO;
 
+import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -7,9 +9,11 @@ import lombok.Data;
  * 2017-05-12 14:13
  */
 @Data
-public class ResultVO<T> {
+public class ResultVO<T> implements Serializable{
 
-    /** 错误码. */
+	private static final long serialVersionUID = -5809424184428987827L;
+
+	/** 错误码. */
     private Integer code;
 
     /** 提示信息. */
