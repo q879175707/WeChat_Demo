@@ -4,12 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.learn.exception.SellException;
 import com.learn.service.RedisLock;
 import com.learn.service.SeckillService;
 import com.learn.utils.KeyUtil;
 
+@Service
 public class SeckillServiceImpl implements SeckillService{
 	
 	// 超时时间10s
